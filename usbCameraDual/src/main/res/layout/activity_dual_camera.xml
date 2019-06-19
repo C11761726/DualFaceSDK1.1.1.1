@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/BLACK"
+    tools:context="com.techshino.usbcameradual.DualCameraActivity">
+
+    <fragment
+        android:id="@+id/dualFaceFragment"
+        android:name="com.techshino.fragment.DualCameraFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/startCameraBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="启动摄像头"/>
+
+        <Button
+            android:id="@+id/stopCameraBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关闭摄像头"/>
+
+        <Button
+            android:id="@+id/startDetectBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始检测"/>
+
+        <Button
+            android:id="@+id/stopDetectBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="停止检测"/>
+
+        <Button
+            android:id="@+id/settingBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置"/>
+
+        <Button
+            android:id="@+id/exitBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="退出"/>
+    </LinearLayout>
+
+</LinearLayout>
